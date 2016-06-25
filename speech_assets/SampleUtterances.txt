@@ -1,3 +1,7 @@
-MinutesIntent  {Minutes}
-MinutesIntent  {Minutes} minutes
-MinutesIntent  it took {Minutes}
+MinutesIntent  {minutes}
+MinutesIntent  {minutes} minutes
+MinutesIntent  it took {minutes}
+
+SecondsIntent  {seconds}
+SecondsIntent  {seconds} minutes
+SecondsIntent  it took {seconds}

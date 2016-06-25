@@ -16,14 +16,20 @@ logging.getLogger('flask_ask').setLevel(logging.DEBUG)
 
 @ask.launch
 def launch():
-    return question("How long did your workout take?")
+    welcome_msg = render_template('welcome')
+    return question(welcome_msg)
 
 
 @ask.intent("MinutesIntent")
 def log_minutes(minutes):
-    log.debug("Logged: " + minutes)
-    msg = "OK, {0} minutes.".format(minutes)
-    return statement(msg)
+    minutes_msg = render_template('run_minutes', minutes=minutes)
+    return question(minutes_msg)
+
+
+@ask.intent("SecondsIntent")
+def log_seconds(seconds):
+    seconds_msg = render_template('run_seconds', seconds=seconds)
+    return statement(seconds_msg)
 
 
 @ask.session_ended

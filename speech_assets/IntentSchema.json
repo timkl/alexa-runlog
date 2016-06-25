@@ -4,7 +4,14 @@
       "intent": "MinutesIntent",
       "slots": [
         {
-          "name": "Minutes",
+          "name": "minutes",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "SecondsIntent",
+      "slots": [
+        {
+          "name": "seconds",
           "type": "AMAZON.NUMBER"
         }
       ]
