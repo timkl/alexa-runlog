@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "MinutesIntent",
+      "slots": [
+        {
+          "name": "Minutes",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+welcome: How long did your workout take?
+
+welcome_reprompt: I didn't catch that. How long did your workout take?
+
+run_duration: OK, {{ minutes }} minutes and {{ seconds }} seconds.
+
+run_logged: Your workout has been logged.
+
+personal_best: New personal best! Congratulations.
+
+personal_worst: New personal worst. Boohoo.
