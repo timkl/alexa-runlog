@@ -2,9 +2,7 @@ welcome: How long did your workout take?
 
 welcome_reprompt: I didn't catch that. How many minutes did your workout take?
 
-run_minutes: OK, {{ minutes }} minutes. And how many seconds did your workout take?
-
-run_seconds: OK, {{ seconds }} seconds.
+run_duration: OK, {{ duration }}.
 
 run_logged: Your workout has been logged.
 

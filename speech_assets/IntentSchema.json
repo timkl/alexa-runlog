@@ -1,18 +1,11 @@
 {
   "intents": [
     {
-      "intent": "MinutesIntent",
+      "intent": "DurationIntent",
       "slots": [
         {
-          "name": "minutes",
-          "type": "AMAZON.NUMBER"
-        }
-      ],
-      "intent": "SecondsIntent",
-      "slots": [
-        {
-          "name": "seconds",
-          "type": "AMAZON.NUMBER"
+          "name": "duration",
+          "type": "AMAZON.DURATION"
         }
       ]
     }

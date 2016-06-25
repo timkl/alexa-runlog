@@ -1,7 +1,8 @@
 import logging
+import dateutil.parser
 
 from flask import Flask, render_template
-from flask_ask import Ask, session, question, statement
+from flask_ask import Ask, question, statement
 
 
 app = Flask(__name__)
@@ -20,16 +21,10 @@ def launch():
     return question(welcome_msg)
 
 
-@ask.intent("MinutesIntent")
-def log_minutes(minutes):
-    minutes_msg = render_template('run_minutes', minutes=minutes)
-    return question(minutes_msg)
-
-
-@ask.intent("SecondsIntent")
-def log_seconds(seconds):
-    seconds_msg = render_template('run_seconds', seconds=seconds)
-    return statement(seconds_msg)
+@ask.intent("DurationIntent")
+def log_minutes(duration):
+    duration_msg = render_template('run_duration', duration=duration)
+    return statement(duration_msg)
 
 
 @ask.session_ended
