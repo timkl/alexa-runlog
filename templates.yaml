@@ -1,11 +1,9 @@
 welcome: How long did your workout take?
 
-welcome_reprompt: I didn't catch that. How many minutes did your workout take?
+welcome_reprompt: "I did not catch that. How many minutes did your workout take?"
 
-run_duration: OK, {{ duration }}.
+run_logged: "OK, I have logged {{ minutes }} minutes, {{ seconds }} seconds."
 
-run_logged: Your workout has been logged.
+personal_best: <speak><audio src="https://s3-us-west-1.amazonaws.com/run-log/best.mp3" />{{ minutes }} minutes, {{ seconds }} seconds. That is a new personal best. Congratulations tiger!</speak>
 
-personal_best: New personal best! Congratulations.
-
-personal_worst: New personal worst. Boohoo.
+personal_worst: <speak><audio src="https://s3-us-west-1.amazonaws.com/run-log/worst.mp3" />{{ minutes }} minutes, {{ seconds }} seconds. That is a new personal worst. Please up your game.</speak>
