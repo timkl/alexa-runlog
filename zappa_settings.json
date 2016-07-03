@@ -1,0 +1,6 @@
+{
+    "production": {
+        "s3_bucket": "run-log",
+        "app_function": "alexa-runlog.app"
+    }
+}
